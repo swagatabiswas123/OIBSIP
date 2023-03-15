@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"open-sans",sans-serif;
+}
+
+li{
+    list-style: none;
+}
+ul{
+    padding: 0;
+}
+button{
+    cursor: poiner;
+}
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    padding: 0;
+    margin: 0;
+}
+.aling-item{
+    align-items: center;
+    justify-content: center;
+    
+}
+.toggle{
+    display: none;
+}
+
+
+
+.white-text{
+    color: #fff;
+}
+.black-text{
+    color: #000;
+}
+@font-face {
+    font-family:"Reey-Regular";
+    src: url("../fonts/Reey-Regular.otf");
+}
+html{
+    overflow-x: hidden;
+}
+.line{
+    width: 100px;
+    height: 5px;
+    background: #fff;
+    border: none;
+    margin-left: 45%;
+}
+
+
+/********************** start of the banner ***************/
+header{
+    background: transparent;
+    color: white;
+    width: 100%;
+}
+.banner{
+    background: url("../images/png/chalkbanner.png");
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+}
+h1{
+    font-family: "Reey-Regular";
+    color: #fff;
+    padding: 1.5rem 0;
+    
+}
+
+.r-font {
+    font-size: 5.5rem;
+}
+nav {
+    margin-left: 11rem;
+}
+
+.menu input{
+        width: 80%;
+        padding: 7px;
+        
+    }
+    .menu form{
+        position: relative;
+    }
+    .menu form i{
+        position: absolute;
+        right: 45px;
+        color: black;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 100%;
+        padding: 10px;
+    }
+
+.menu ul li{
+    list-style: none;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+   
+   
+}
+ul li a:hover{
+    color: #7d848f;
+}
+
+p{
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: start;
+    font-size: 0.9rem;
+    
+
+}
+
+.white{
+    background: white;
+    padding: 7px 3rem;
+    border-radius: 5rem;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    border: none;
+    font-weight: 700;
+}
+.white:hover{
+   background: #27292c;
+    color: #fff;
+
+}
+.b-leftside {
+    color: #fff;
+}
+.italic{
+    font-style: italic;
+    font-size: 1.4rem;
+}
+.b-rightside{
+    position: relative;
+}
+.bowl {
+    position: absolute;
+    top: 91%;
+    left: 26%;
+}
+.leaf {
+    position: absolute;
+    top: 100%;
+    left: 67%;
+}
+.plate{
+    position: absolute;
+    top: -17%;
+    left: 45%;
+}
+
+/********************** end of the banner ***************/
+
+
+/********************** start of the showmore ***************/
+.black{
+    padding: 7px 3rem; 
+    border:none;
+    border-radius: 50px;
+    background: #27292c;
+    color: #fff;  
+    font-weight: 500;
+}
+.black:hover{
+    background: #ffffff;
+    color: #24262b;
+
+}
+.showmore p{ 
+    color: #27292c;
+}
+.text-center p{
+    text-align: center;
+}
+.showmore{
+    padding: 2rem;
+}
+.grey{
+    
+        padding: 7px 3rem; 
+        border:none;
+        border-radius: 50px;
+        background: #626262;
+        color: #fff;  
+        font-weight: 700;
+
+}
+.grey:hover{
+    background: #ffffff;
+    color: rgb(0, 0, 0);  
+}
+
+
+
+
+/********************** end of the showmore ***************/
+
+ /************************ start of the show-info***************** */
+ .show-info{
+    background: url("../images/png/chalkbanner.png");
+    background-position: center;
+    background-size: cover;
+ }
+
+
+ /******************************* end of the showmore *********************************************/
+
+
+ /************************************ start of pizza**************************************/
+.pizza{
+    background: url("../images/png/chalkbanner.png");
+    background-position: center;
+    background-size: cover;
+    height: 966px;
+    position: relative;
+}
+.test{
+    padding: 200px 0 50px 0;
+}
+.pizza img{
+    margin-left: 10%;
+    padding-top: 3rem;
+}
+.leaf-2{
+    position: absolute;
+    left: 13%;
+    top: -20%;
+}
+
+
+
+
+  /************************************ end of pizza**************************************/
+
+  /* start of the owl */
+       .owl{
+        padding-top: 10rem;
+       }
+   
+  /* end of the owl */
+
+
+
+  /* start of the title */
+   .title{
+    background: #27292c;
+    position: relative;
+     height: 500px;
+     background: url('../images/png/bg.jpeg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     position: relative;
+   }
+
+   .title::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #0808085e;
+
+   }
+   .title .container{
+    z-index: 2;
+   }
+ 
+    .leaf3 {
+        position: absolute;
+        z-index: 5;
+        left: 12%;
+        top: -21%;
+        display: none;
+    }
+    .grey{
+        position: absolute;
+        top: 59.4%;
+        left: 45%;
+        z-index: 6;
+        padding: 15px 3rem; 
+        border:none;
+        border-radius: 50px;
+        background: #626262;
+        color: #fff;  
+        font-weight: 700;
+        }
+    .grey:hover{
+        background: #ffffff;
+        color: rgb(0, 0, 0);  
+    }
+
+    input {
+        width: 50%;
+        padding: 13px;
+        border-radius: 50px;
+        border: none;
+        margin-left: 0%;
+    
+      }
+      input:focus{
+        outline: none;
+      }
+
+      ::placeholder{
+           color: #ddd;
+      }
+
+
+  /* end of the title */
+
+
+   /* start of the footer */
+    footer{
+        padding: 8rem 0;
+    }
+   
+    .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgb(127 177 2 / 19%);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #241515;
+        transition: all 0.5 ease;
+    }
+    .social-links a:hover{
+        color: #24262b;
+        background-color: rgb(127 177 2 / 49%);
+    }
+   footer ul li {
+        padding: 0.5rem 0;
+    }
+    footer ul {
+        padding-left: 0rem;
+    }
+
+
+   /* end of the footer */
+
+
+   .movebtn{
+    position: absolute;
+    top: 59.4%;
+    left: 58% !important;
+    transition: 0.4s ease-in-out;
+    z-index: 7;
+    padding: 15px 3rem; 
+    border:none;
+    border-radius: 50px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);  
+    font-weight: 700;
+   }
+   .smallwidth{
+    width: 10%;
+   }
+   .maxwidth{
+     width: 50%;
+     transition: 0.4s ease-in;
+     
+   }
+   .toggle {
+    position: absolute;
+    background: #fff;
+    border-radius: 100%;
+    z-index: 999;
+    top: 24px;
+    left: 83%;
+    color: #070707;
+    display: none; 
+    box-shadow: 7px 7px 5px rgb(0, 0, 0);
+  }
+ 
