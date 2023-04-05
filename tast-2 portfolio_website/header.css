@@ -1,0 +1,77 @@
+
+
+
+/* all header */
+
+
+
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines{
+    display: none;
+}
+
+
+.navbar{
+    box-shadow: 0px 5px 10px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    opacity: 0.85;
+    z-index: 100;
+}
+
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+
+.menu-items{
+    order: 2;
+    display: flex;
+}
+.logo{
+    order: 1;
+    font-size: 2.3rem;
+}
+
+.menu-items li{
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.navbar a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+    font-family: 'Phudu', cursive;
+}
+
+.navbar a:hover{
+    color: #07032f;
+}
+
+@media (max-width: 768px){
+    header{
+        display: none;
+    }
+
+}
+
+/* all header */   
+
+/* contact form */
+.cf {
+    top: -154px;
+    left: -135%;
+    width: 100%;
+    position: relative;
+}
+/* contact form */
+

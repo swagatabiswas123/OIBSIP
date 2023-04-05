@@ -1,0 +1,354 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: border-box;
+    font-family: 'Roboto', sans-serif ;
+}
+
+/*social links last page text*/
+.lastpagerow{
+    position: absolute;
+    top: -187%;
+    left: 0%;
+
+}
+
+
+
+
+
+/* row colums */
+
+.row{
+    width:100%;
+    margin:0 auto;
+    display: flex;
+    padding:0;
+}
+.col-6{
+    width: 50%;
+    color: #ffffff !important;
+    text-align: start;
+    padding: 0 5rem;
+    margin: 2rem;
+    padding:0
+    
+
+}
+.col-4{
+    width: 33.33%;
+    text-align: left;
+    margin: 5rem;
+    padding:0;
+    
+}
+.col-3{
+  width: 25%;
+  text-align: left;
+  margin: 5rem;
+  padding:0;
+   
+}
+
+
+
+/* row colums */
+
+/* all fonts here */
+h1{
+    font-size: 5rem;
+    color: #f0f0f0;
+    font-weight: 800;
+    text-align: center;
+    margin: 1rem 0;
+    text-align: start;
+
+}
+h2{
+  color: #ffff !important;
+}
+p{
+  color: #ffff !important;
+}
+h4{
+  color: #ffff !important;
+}
+
+/* all fonts here */
+
+
+/* position and z index and margin */
+.postion-relative{
+    position: relative;
+}
+.postion-relative{
+    position: absolute;
+}
+
+.margin-left{
+    margin-left: 3rem;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+.d-flex{
+  display:flex;
+}
+.m-1{
+  margin: 1rem;
+}
+.m-2{
+  margin: 2rem;
+}
+.m-3{
+  margin: 3rem;
+}
+.m-4{
+  margin: 4rem;
+}
+.m-5{
+  margin: 5rem;
+}
+
+/* position and z index */
+.container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+.container section{
+    min-width:100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #fffee1;
+}
+.container section:nth-child(1)
+{
+    background: url('./images/cloud.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container section:nth-child(2)
+{
+  background: url('./images/darkbg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+.container section:nth-child(3){
+    background: #635985;
+}
+.container section:nth-child(4){
+  background: url('./images/darkbg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container section:nth-child(5){
+  background: url('./images/nightsky.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.container section .content {
+    min-width: 800px;
+    padding: 40px;
+    text-align: center;
+}
+.container section .content h2{
+    font-size:4rem;
+    color: #111;
+
+}
+.container section .content p {
+    font-size: 1.5rem;
+    line-height: 1.4em;
+    color: #111;
+}
+
+/* mobile view */
+
+@media(max-width:768px)
+{
+    .container
+    {
+        position: absolute;
+        display:flex;
+        flex-direction: column;
+        height: auto;
+        transform: none !important;
+    }
+    .container section .content {
+        min-width: 800px;
+        padding: 40px;
+        text-align: center;
+    }
+}
+/* mobile view */
+
+/* skill bar */
+
+skills-bar .bar:not(first-child) {
+    margin: 20px 0;
+  }
+  
+  .skills-bar .bar .info {
+    margin-top: 20px;
+  }
+  
+  .skills-bar h1 {
+    text-align:center;
+    text-transform: uppercase;
+    text-shadow:
+      0px 2px 3px rgba(0,0,0,.4),
+      0px 4px 13px rgba(0,0,0,.1)
+      ;
+  }
+  
+  .skills-bar .bar .info span {
+    font-weight: 500;
+    font-size:17px;
+    opacity: 0;
+    animation: showText .5s 1s linear forwards;
+  }
+  
+  /* Bar itself */
+  .skills-bar .bar .progress-line {
+    height: 17px;
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin:left;
+    border-radius:10px;
+    
+    box-shadow:inset 0 1px 1px rgba(0,0,0,.5),
+      0 1px rgba(255,255,255,.8);
+    animation:animate 1s cubic-bezier(1,0,.5,1) forwards;
+  }
+  
+  /* Skill's Bar */
+  .bar .progress-line span {
+    height: 106%;
+    position: absolute;
+    border-radius:10px;
+    transform:scaleX(0);
+    transform-origin:left;
+    background: #ed4848;
+    animation: animate 1.5s 1.5s cubic-bezier(1,0,.5,1) forwards;
+  }
+
+
+  
+  /* Skill's length */
+  .bar .progress-line.html span {
+    width: 90%;
+  }
+  
+  .bar .progress-line.css span {
+    width: 90%;
+  }
+  
+  .bar .progress-line.javascript span {
+    width: 70%;
+  }
+  
+  .bar .progress-line.mysql span {
+    width: 65%;
+  }
+  
+  .bar .progress-line.php span {
+    width: 50%;
+  }
+  
+  /* Background for the percentage numbers */
+  .progress-line span::before {
+    position: absolute;
+    content: '';
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width:0px;
+    border-right-width:0px;
+    border-top-color:#000;
+    opacity: 0;
+    animation: showText2 .5s 1.5s linear forwards;
+  }
+  
+  /* Percentage numbers */
+  .progress-line span::after{
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight:500;
+    background: #000;
+    color: #fff;
+    padding: 1px 8px;
+    font-size:12px;
+    border-radius:3px;
+    opacity: 0;
+    animation: showText2 .8s 2s linear forwards;
+  }
+  
+  .progress-line.html span::after {
+    content: "90%";
+  }
+  
+  .progress-line.css span::after {
+    content: "90%";
+  }
+  
+  .progress-line.javascript span::after {
+    content: "70%";
+  }
+  
+  .progress-line.mysql span::after {
+    content: "65%";
+  }
+  
+  .progress-line.php span::after {
+    content: "50%";
+  }
+  
+  /* Animations */
+  /* Bar's animation */
+  @keyframes animate {
+    100%{
+      transform: scaleX(1);
+    }
+  }
+  
+  /* Skill's name animation */
+  @keyframes showText {
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Percentage number's animation */
+  @keyframes showText2 {
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+/* skill bar */
